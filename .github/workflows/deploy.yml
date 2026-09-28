@@ -11,8 +11,10 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+    build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
 
     steps:
       - name: Checkout
